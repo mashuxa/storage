@@ -1,0 +1,55 @@
+.main,
+.nav {
+    color: white; 
+    overflow-y: scroll !important;
+    padding-right: 0.5rem;
+    position: relative;
+}
+ 
+
+.directory { 
+    img {
+        
+        cursor: pointer;
+        width: 100%;  
+        transition-duration: 0.3s; 
+        &:hover { transform: scale(1.2);}
+        &:active { transform: scale(0.8);}
+    }
+    list-style: none;
+    &.level-1 {
+        padding-left: 0;
+        & > li > span { 
+            display: block;
+        }
+    }  
+    span { 
+        cursor: pointer;  
+        display: block; 
+        padding: 0.5rem;
+        transition-duration: 0.3s; 
+        &.open {
+            background-color: black; 
+        }  
+    }
+    
+}
+.imgs-container img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.directory > li > span + .directory {
+display: none;
+        }
+.imgs-container img.big-size { 
+    width: 100%;
+    height: auto; 
+}
+.btn {margin: 5px !important;}
+h1 {text-align: center;}

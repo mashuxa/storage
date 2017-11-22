@@ -1,0 +1,32 @@
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header { 
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / span 2;
+    grid-row: 1; 
+    .tagline {
+        flex-grow: 1;
+        text-align: right;
+    }
+} 
+
+.nav {  
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.main {
+    grid-column: 2 ;
+    grid-row: 2;
+} 
+.footer { 
+    grid-column: 2;
+    grid-row: 3;
+}
